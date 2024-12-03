@@ -4,17 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
-      rel="stylesheet"
-    />
     <script defer src="app.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <title>Unit Converter</title>
   </head>
   <body>
-    <h1>Unit Converter</h1>
-    <button id="convert-btn">Convert 🇺🇸</button>
+    <div class="page-wrapper">
+      <h1>Patriotic Unit Converter</h1>
+      <div class="card">
+        <form>
+          <div class="input-wrapper">
+            <input type="number" id="input" value="0" />
+
+            <div class="input-1">
+              <input type="radio" id="toFahrenheit" name="unit" />
+              <label for="toFahrenheit">Celsius to Fahrenheit</label>
+            </div>
+
+            <div class="input-2">
+              <input type="radio" id="toYard" name="unit" />
+              <label for="toYard">Meter to Yard</label>
+            </div>
+
+            <div class="input-3">
+              <input type="radio" id="toGallon" name="unit" />
+              <label for="toYard">Liter to Gallon</label>
+            </div>
+          </div>
+
+          <button type="button" id="convert-btn"></button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
